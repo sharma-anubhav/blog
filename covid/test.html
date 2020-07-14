@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+
+<body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+$.getJSON('https://api.covid19api.com/world/total', function(data) {
+      var cases = data.TotalConfirmed;
+      var death = data.TotalDeaths;
+      var recovered = data.TotalRecovered;
+      document.getElementById('cases').innerHTML = cases;
+      document.getElementById('death').innerHTML = death;
+      document.getElementById('recovered').innerHTML = recovered;
+});
+</script>
+<b id = "cases"></b><br>
+<b id = "death"></b><br>
+<b id = "recovered"></b>
+
+<button class="button5"><b id="cases"></b></button>
+
+</body>
+</html>

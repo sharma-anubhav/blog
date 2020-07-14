@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<button class="buttonC" style="vertical-align:middle" onclick="setTimeout(ref,100)"><span>Refresh Data / Load Table</span></button>
+
+<script>
+function ref(){
+  window.location.reload();
+}
+</script>
+<br>
+<div style="overflow-x:auto;">
+<table id="tableCss">
+  <tr>
+    <th>District</th>
+    <th>Active</th>
+    <th>Confirmed</th>
+    <th>Deaths</th>
+    <th>Recovered</th>
+  </tr>
+</div>
+</table>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
+<script type="text/javascript">
+  $(document).ready(function(){
+    $.ajax({
+      url:"https://api.covid19india.org/v2/state_district_wise.json",
+      dataType:"json",
+      success:function(data){
+        $(data).each(function(index,value){
+          if(value.state == "Punjab"){
+            $(value.districtData).each(function(indexd,valued){
+          var record = "<tr><td>"+valued.district+"</td><td>"+valued.active+"</td><td>"+valued.confirmed+"</td><td>"+valued.deceased+"</td><td>"+valued.recovered+"</td></tr>";
+          $("table").append(record);
+          });
+          }
+        });
+      }
+    });
+  });
+</script>
+

@@ -1,0 +1,580 @@
+// Body
+$base-font-size: 16px;
+$base-font-style: normal;
+$base-font-variant: normal;
+$base-font-weight: normal;
+$base-font-family: 'Nunito', sans-serif;
+$base-line-height: 28px;
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  color: $body-color;
+  background: $background;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  input, textarea {
+		border: $border-color 1px solid;
+		outline: none;
+		&:focus:required:invalid {
+			border-color: $danger;
+		}
+		&:required:valid {
+			border-color: $success;
+		}
+	}
+}
+
+::placeholder {
+	color: #666;
+}
+
+*::selection {
+  color: $white;
+  background-color: $primary-color;
+}
+
+
+.author-image {
+  min-height: 230px;
+  margin-bottom: 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: $black;
+  box-shadow: 0 9px 18px 0 rgba(0,0,0,0.25);
+  opacity: 0;
+  transition: all 1s cubic-bezier(0.6, 0.3, 0, 1);
+  &:after {
+    content: "";
+    display: table;
+    width: 100%;
+    padding-top: 50%;
+  }
+}
+
+
+// Headings
+$heading-font-weight: 700;
+$heading-font-family: 'Nunito', -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
+
+$font-size-h1:  36px;
+$font-size-h2:  28px;
+$font-size-h3:  24px;
+$font-size-h4:  20px;
+$font-size-h5:  18px;
+$font-size-h6:  16px;
+
+$heading-line-height: 1.2;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: initial;
+}
+
+h1 {
+  font-size: $font-size-h1;
+}
+
+h2 {
+  font-size: $font-size-h2;
+}
+
+h3 {
+  font-size: $font-size-h3;
+}
+
+h4 {
+  font-size: $font-size-h4;
+}
+
+h5 {
+  font-size: $font-size-h5;
+}
+
+h6 {
+  font-size: $font-size-h6;
+}
+
+
+// Blockquote
+blockquote {
+  padding-left: $base-spacing-unit;
+  border-left: 3px solid $primary-color;
+  font-style: normal;
+}
+
+
+// Pre
+pre {
+  overflow: auto;
+  padding: 15px;
+  margin-bottom: 0;
+  font-size: 14px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+
+// Images
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  &+em {
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    font-weight: normal;
+    font-size: 16px;
+    color: $gray-blue;
+  }
+}
+
+
+// Links
+a {
+    text-decoration: none;
+    color: $link-color;
+    transition: $global-transition;
+
+    &:hover {
+        color: $link-color-hover;
+    }
+}
+
+// Hr
+hr {
+  display: block;
+  height: 2px;
+  padding: 0;
+  margin: 30px 0;
+  line-height: 0;
+  border: 0;
+  background-color: $border-color;
+}
+
+
+// Blockquote
+blockquote {
+  padding: 15px 15px 15px 30px;
+  font-size: 18px;
+  font-style: normal;
+  border-left: 4px solid $primary-color;
+  p {
+    margin-bottom: 0;
+  }
+}
+
+
+// Pre
+pre {
+  overflow: auto;
+  padding: 15px;
+  margin-bottom: 0;
+  font-size: 14px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+// Table
+.table-container {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  font-size: 12px;
+  color:$black;
+  width: 100%;
+  border-width: 1px;
+  border-color: $gray-blue;
+  border-collapse: collapse;
+}
+
+table th {
+  padding: 8px;
+  font-size: 16px;
+  text-align: left;
+  border: 1px solid $gray-blue;
+  color: $white;
+  background-color: $primary-color;
+}
+
+table tr {
+  background-color: lighten($primary-color, 45%);
+  transition: all .3s ease;
+  &:nth-child(even) {
+    background-color: $white;
+  }
+}
+
+table td {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid $gray-blue;
+}
+
+table tr:hover {
+  background-color: $white;
+}
+
+
+
+/*                              ################ button #############                      */ 
+
+.buttonC {
+  display: inline-block;
+  border-radius: 1px;
+  background-color: #101010;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 1px;
+  opacity: 1;
+  width: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 3px;
+}
+
+.buttonC span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttonC span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.buttonC:hover {opacity: 0.6}
+.buttonC:hover span {
+    padding-right: 25px;
+}
+
+.buttonC:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*                              ################ button 1 #############                      */ 
+
+
+.button1 {
+  display: inline-block;
+  border-radius: 30px;
+  background-color: #F13180;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 8px;
+  opacity: 1;
+  width: 25vw;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 3px;
+}
+
+.button1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button1:hover {opacity: 0.6}
+.button1:hover span {
+    padding-right: 25px;
+}
+
+.button1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/*                              ################ button 2 #############                      */ 
+
+
+.button2 {
+  display: inline-block;
+  border-radius: 30px;
+  background-color: #14D767 ;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 8px;
+  opacity: 1;
+  width: 25vw;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 3px;
+}
+
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button2:hover {opacity: 0.6}
+.button2:hover span {
+    padding-right: 25px;
+}
+
+.button2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/*                              ################ button 3 #############                      */ 
+
+
+.button3 {
+  display: inline-block;
+  border-radius: 30px;
+  background-color: #2683e0;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 8px;
+  opacity: 1;
+  width: 25vw;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 3px;
+}
+
+.button3 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button3 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button3:hover {opacity: 0.6}
+.button3:hover span {
+    padding-right: 25px;
+}
+
+.button3:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*                              ################ button 4 #############                      */ 
+
+.button4 {
+  display: inline-block;
+  border-radius: 30px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 8px;
+  opacity: 1;
+  width: 25vw;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 3px;
+}
+
+.button4 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button4 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button4:hover {
+  opacity: 0.6;
+}
+.button4:hover span {
+    padding-right: 25px;
+}
+
+.button4:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*                              ################ button 5 #############                      */ 
+
+
+.button5 {
+  display: inline-block;
+  border-radius: 30px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 8px;
+  opacity: 1;
+  width: 100vw;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 3px;
+}
+
+.button5 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button5 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button5:hover {opacity: 1}
+.button5:hover span {
+    padding-right: 25px;
+}
+
+.button5:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*                                  ################    Table #############                      */ 
+#tableCss {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  opacity: 1;
+}
+
+#tableCss td, #tableCss th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#tableCss tr:nth-child(even){background-color: #f2f2f2;}
+#tableCss tr:nth-child(odd){background-color: #f3f3f3;}
+#tableCss tr:hover {background-color: #ddd;}
+
+#tableCss th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+/*                              ################    Image With overlay #############                      */ 
+.imagewithoverlay {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 128%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ff5b82;
+}
+
+.imagewithoverlay:hover .overlay {
+  opacity: 0.85
+}
+
+@media (max-width: 599px){
+.text{
+  white-space: nowrap; 
+  color: white;
+  font-size: 3vw;
+  position: relative;
+  overflow: scroll;
+  top: 53%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+}
+@media (min-width: 600px){
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 1.5vw;
+  position: absolute;
+  overflow: scroll;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+}

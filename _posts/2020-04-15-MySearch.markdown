@@ -1,0 +1,26 @@
+---
+layout: post
+title:  MySearch
+date:   2020-04-15 01:11:58 +0800
+image:  Search.png
+tags:   [Python , Web , Dev]
+---
+<b>MySearch </b>Webscraping application I made using BeautifulSoup. Mostly What we are looking for lies in the top 2-3 links of our google results. So this application opens them direcly in seperate tabs and omits the the google page entirely.
+You can open youtube results or news results or have the headlines printed directly.s
+<br>
+You need enter the search phrease and category (webpages/news/video) and it will automatically open the the relavent pages in your browser window.
+<br> 
+<br>
+<a href="https://github.com/sharma-anubhav/Mysearch">Source Code</a>
+<br>
+OR
+<br>
+<a href="https://github.com/sharma-anubhav/Mysearch/raw/master/gui_search(mac).zip">Download for Mac (GUI version)</a>
+<br>
+OR
+<br>
+<a href="https://github.com/sharma-anubhav/Mysearch/raw/master/search(windows).exe">Download for Windows (CONSOLE version)</a>
+<br>
+<br>
+<a href="https://github.com/sharma-anubhav/Mysearch/raw/master/gui_search.exe">Download for Windows (GUI version)</a>
+<br>

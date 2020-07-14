@@ -1,0 +1,55 @@
+---
+layout: default
+---
+<br><br><br><br>
+
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
+<script type="text/javascript">
+   $(function () {
+  $(document).ready(function(){
+    $.ajax({
+      url:"https://api.covid19api.com/world/total",
+      dataType:"json",
+      success:function(data){
+        $(data).each(function(index,value){
+          var record = value.TotalConfirmed;
+          //document.write(record);
+        });
+      }
+    });
+  });
+});
+</script>
+</body>
+</html>
+
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="#" id="About">World Statistics COVID-19</a>
+  <a href="#" id="Insta">Cases: </a>
+  <a href="#" id="Graph">Deaths: </a>
+  <a href="#" id="Home">Recovered:</a>
+</div>
+
+<br><br><br><br><br><br>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
+<script type="text/javascript">
+window.onload = function(){
+    $.ajax({
+      url:"https://api.covid19api.com/world/total",
+      dataType:"json",
+      success:function(data){
+        $(data).each(function(index,value){
+          var cases = value.TotalConfirmed;
+          var death = value.TotalDeaths;
+          var recovered = value.TotalRecovered;
+          document.getElementById('cases').innerHTML = cases;
+          document.getElementById('death').innerHTML = death;
+          document.getElementById('recovered').innerHTML = recovered;
+        });
+      }
+    });
+};
+</script>

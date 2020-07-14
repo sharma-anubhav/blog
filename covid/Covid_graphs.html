@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+
+/*                              ################ button #############                      */ 
+
+.buttonC {
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 8px;
+  opacity: 0.6;
+  width: 250px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 3px;
+}
+
+.buttonC span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttonC span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.buttonC:hover {opacity: 1}
+.buttonC:hover span {
+    padding-right: 25px;
+}
+
+.buttonC:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+</style>
+</head>
+<body style="background-color:#232427;">
+
+<script>
+window.onload = function() {
+
+var dataPoints = [];
+var dataPoints1 = [];
+
+var options =  {
+	animationEnabled: true,
+	theme: "dark1",
+	title: {
+		text: " Daily Cases"
+	},
+	axisX: {
+		title: "Days",
+		titleFontSize: 24,
+	},
+	axisY: {
+		title: "Daily Cases",
+		titleFontSize: 24,
+		includeZero: true
+	},
+	data: [{
+		type: "spline", 
+		yValueType: "number",
+		xValueType: "number",
+		yValueFormatString: "##########.##",
+		dataPoints: dataPoints
+	}]
+};
+var options1 =  {
+	animationEnabled: true,
+	theme: "dark1",
+	title: {
+		text: "Totoal Cases"
+	},
+	axisX: {
+		title: "Days",
+		titleFontSize: 24,
+	},
+	axisY: {
+		title: "Total Cases",
+		titleFontSize: 24,
+		includeZero: true
+	},
+	data: [{
+		type: "spline", 
+		yValueType: "number",
+		xValueType: "number",
+		yValueFormatString: "##########.##",
+		dataPoints: dataPoints1
+	}]
+};
+function addData(data) {
+    $(data.cases_time_series).each(function(index,value){
+		dataPoints.push({
+			x: index+1,
+			y: Number(value.dailyconfirmed)
+		});
+    });
+	$("#chartContainer").CanvasJSChart(options);
+}
+function addData1(data) {
+    $(data.cases_time_series).each(function(index,value){
+		dataPoints1.push({
+			x: index+1,
+			y: Number(value.totalconfirmed)
+		});
+    });
+	$("#chartContainer1").CanvasJSChart(options1);
+}
+$.getJSON("https://api.covid19india.org/data.json", addData);
+$.getJSON("https://api.covid19india.org/data.json", addData1);
+
+}
+
+</script>
+<br>
+<button class="buttonC" style="vertical-align:middle" onclick="setTimeout(ref,100)"><span>Refresh Data / Load Graph</span></button>
+<script>
+function ref(){
+	window.location.reload();
+}
+</script>
+
+<br>
+<div id="chartContainer" style="height: 400px; width: 100%;"></div>
+<br>
+<div id="chartContainer1" style="height: 400px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+<script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+
+  {% include footer.html %}
+
+</body>
+
+</html>

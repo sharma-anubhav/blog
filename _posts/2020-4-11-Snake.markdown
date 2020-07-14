@@ -1,0 +1,14 @@
+---
+layout: post
+title:  Snake
+date:   2020-03-25 21:11:58 +0800
+image:  snake.png
+tags:   [Python , dev , Game]
+---
+<b>Snake</b>, Who needs a nokia just to enjoy a classic old school snake whe you can code it yourself and make it a rather learning experience (before wasting time playing it ;) ).
+<br>
+<br>
+Here's a simulation of the good old snake game which will make you reminisce your childhood days.<br>
+<a href="https://github.com/sharma-anubhav/Snake">Source Code</a>
+<br>OR<br>
+<a href="https://onlinegdb.com/HkxAXcluL">Compile and Play Online</a>
