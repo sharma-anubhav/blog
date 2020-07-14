@@ -110,8 +110,8 @@ $(function() {
     get: 'user',
     limit: 6,
     resolution: 'standard_resolution',
-    userId: '8987997106',
-    accessToken: '8987997106.924f677.8555ecbd52584f41b9b22ec1a16dafb9',
+    userId: '8496997450',
+    accessToken: 'IGQVJXbk8wcHRrNVJoaVowMzF1M0VfdksyM3lIYWgybXdVWFRBQjZAwUkhRaExGUWF2cWYzcVRoYlNhYnFnY1NtX3lQbkROeXJKdFR3VHdKTVU4WllHWThtQTlYeUlpeUdqSGtKQkdaSWhvbWtfTURiQQZDZD',
     template:
       '<li class="instagram-item"><a href="{{link}}" aria-label="{{caption}}" target="_blank"><img src="{{image}}" alt="{{caption}}"></a></li>'
   });
