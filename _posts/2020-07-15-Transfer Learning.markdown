@@ -2,7 +2,7 @@
 layout: Xpost
 title:  Detecting COVID-19 from X-Ray Images using CNN
 date:   2020-07-15 04:55:58 +0800
-image:  xray.jpg
+image:  xray2.png
 tags:   [HTML , javascript]
 ---
 ## ABSTRACT
