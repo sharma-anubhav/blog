@@ -2,12 +2,12 @@
 layout: Xpost
 title:  Detecting COVID-19 from X-Ray Images using CNN
 date:   2020-07-15 04:55:58 +0800
-image:  covid.jpg
+image:  xray.jpg
 tags:   [HTML , javascript]
 ---
 ## ABSTRACT
 We use a dataset of X-ray images from patients with common bacterial pneumonia, confrmed Covid-19 disease, and
-normal incidents, for the automatic detection of the Coronavirus disease. The pneumonia class was also introduced in order to check the accuracy when compared to other lung diseases whose X-Ray image might look similar. This will be done by testing various CNN models with the aim being to improve upon the performance of that of a single model by using certain techniques and observations and apply that to predict the final results.
+normal incidents, for the automatic detection of the Coronavirus disease.CNNs(Convolutional Neural Networks) are capable of extracting image features and are used for classification tasks extensively. We will be testing various CNN models fine tuned for our purpose (trained for 20 epochs) with the aim being to improve upon the performance of that of a single model by using certain techniques and observations and apply that to predict the final results.
 
 ### Dataset
 The dataset used is obtained from [Kaggle](https://www.kaggle.com/tawsifurrahman/covid19-radiography-database).
