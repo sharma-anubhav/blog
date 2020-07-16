@@ -11,7 +11,7 @@ normal incidents, for the automatic detection of the Coronavirus disease.CNNs(Co
 
 ### Dataset
 The dataset used is obtained from [Kaggle](https://www.kaggle.com/tawsifurrahman/covid19-radiography-database).
-it conrains 219 covid-19 confirmed X-Ray images along with images of normal and pneumonia X-Ray data around 1200 each.
+it contains 219 covid-19 confirmed X-Ray images along with images of normal and pneumonia X-Ray data around 1200 each.
 Out of this we choose equal number i.e 150 images from each category to train our models on , 20 images were used as validation data and the rest is used as test data as per requirement in my case 53+600+600.
 The directory structure for my data is available at [github]().
 
@@ -48,16 +48,16 @@ The results obtained after fine tuning the popular CNN models used for classific
   </tr>
 </table>
 
-#### Ensambling
-Here we take the average of the prediction probabilities given by two models for a given sample and predict the class according to theis value.
-In simpler terms, in case the prediction given by two models differ, the image is classified according to the model that is more sure of its prediction value.
+#### Ensembling
+Here we propose a model that take the average of the output prediction probabilities given by two base models for a given sample and predict the class according to this value.
+In simpler terms, in case the prediction given by two models differ, the image is classified according to the model that has higher probablility for its classification.
 
-Here are some of the ensambles that i created:
+Here are some of the created ensembles:
 
 
 <table id="tableCss2">
   <tr>
-    <th>Ensample</th>
+    <th>Ensemple</th>
     <th>Accuracy(%)</th>
   </tr>
   <tr>
@@ -79,11 +79,11 @@ Here are some of the ensambles that i created:
 
 </table>
 
-All of these seem to show increase in the accuracy as compared to their original base models. Particularly the ResNet50 & MobileNetV2 ensambles that gives better results than all the models.
+All of these seem to show increase in the accuracy as compared to their original base models. Particularly the ResNet50 & MobileNetV2 ensembles that gives better results than all the models.
 
-| [![VGG19]({{site.baseurl}}/img/vgg19CM.png)]()  | [![Ensamble]({{site.baseurl}}/img/ensambledCM.png)]()|
+| [![VGG19]({{site.baseurl}}/img/vgg19CM.png)]()  | [![Ensemble]({{site.baseurl}}/img/ensambledCM.png)]()|
 |:---:|:---:|
-| Confusion Matrix of VGG19 | Confusion Matrix of ResNet50 & MobileNetV2 ensamble |
+| Confusion Matrix of VGG19 | Confusion Matrix of ResNet50 & MobileNetV2 ensemble |
 
 #### Selective Combination
 Now we make a new model with the prediction for normal class from the eansambled model and the rest from VGG19.
@@ -95,17 +95,18 @@ Final Model:
 
 #### The Proposed model gives us an Accuracy of 94.0144%
 
-**** All the above results were obtained from data on which the models were not trained on (out sample data). Hence the models performance is not affected by any overfitting that might have occured.
-
+**** All the above results were obtained from data on which the models were not trained on (out sample data).
 Now we are ready to use the model for prediction purpose:
 This can be found on my [github]() repository along with all the required code and documentation for the same.
 
 
 ### DISCUSSION
-the proposed method is based on a very limited dataset where only 150 images were used to train a single category. Also the test data used was unblanced which does not affect the performance but may affect the precision of COVID class.
+The proposed method is based on a very limited dataset where only 150 images were used to train a single category. Also the test data used was unblanced which does not affect the performance but may affect the precision of COVID class.
 With around 150 trainig images we are able to get over 90% accuracy for Covid-19 detection among 2 other classes.  
 Based on the results, it is demonstrated that deep learning with CNNs may have signifcant efects on the automatic detection and automatic extraction of essential features from X-ray images, related to the diagnosis of the Covid-19.
 it is necessary to develop models capable of distinguishing Covid-19 cases from other similar viral cases, such as SARS, but also from a greater variety of common pneumonia or even physiological X-rays.
+
+#### Web app link : [Chest X-Ray Analysis](http://anubhavs.pythonanywhere.com/)
 
 
 
