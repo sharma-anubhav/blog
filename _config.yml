@@ -3,8 +3,8 @@
 
 title: Alpha Sierra
 description: A Web Blog maintained by Anubhav Sharma
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/blog" # the subpath of your site, e.g. /blog
+url: "http://www.anubhav-sharma.com/" # the base hostname & protocol for your site, e.g. http://example.com
 
 
 #-------------------------------
