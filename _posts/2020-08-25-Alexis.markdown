@@ -2,7 +2,7 @@
 layout: post
 title:  Alexis - Alexa for your PC 
 date:   2020-08-25 01:11:58 +0800
-image:  alexis.jpg
+image:  alexis1.jpg
 tags:   [Python, Application]
 ---
 On windows machines, we are stuck with cortana which uses BING search engine, which frankly many people dont like.<br>
@@ -12,8 +12,9 @@ The Assistant comes with a modern user interface which is built using HTML&CSS a
 The searching uses Beautiful soup to scrape the desired type of results from google. Subprocess commands are used to control the os level features like launching apps, power and brightness controls.<br>
 API's are used to fetch informnation from Wikipedia and for Weather.
 <br>
-All this bundled with intelligent string handling and gTTs(google text to speech) gives us Alexis
+All this bundled with intelligent string handling and gTTs(google text to speech) gives us Alexis<br>
+More feature to come.<br>
 Project link: <a href="https://github.com/sharma-anubhav/JARVIS">Github</a>
-
+<br>
 For Windows, Download the Application <a href="https://github.com/sharma-anubhav/JARVIS/raw/master/V-0.2/Alexa.exe">exe</a> file
 
