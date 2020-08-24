@@ -2,7 +2,7 @@
 layout: post
 title:  Alexis - Alexa for your PC 
 date:   2020-08-25 01:11:58 +0800
-image:  alexis1.jpeg
+image:  alexis.png
 tags:   [Python, Application]
 ---
 On windows machines, we are stuck with cortana which uses BING search engine, which frankly many people dont like.<br>
