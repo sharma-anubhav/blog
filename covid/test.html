@@ -1,28 +1,40 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+---
 
+<button class="buttonC" style="vertical-align:middle" onclick="setTimeout(ref,100)"><span>Refresh Data / Load Table</span></button>
 
-
-
-
-<body>
-
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script>
-$.getJSON('https://api.covid19api.com/world/total', function(data) {
-      var cases = data.TotalConfirmed;
-      var death = data.TotalDeaths;
-      var recovered = data.TotalRecovered;
-      document.getElementById('cases').innerHTML = cases;
-      document.getElementById('death').innerHTML = death;
-      document.getElementById('recovered').innerHTML = recovered;
-});
+function ref(){
+  window.location.reload();
+}
 </script>
-<b id = "cases"></b><br>
-<b id = "death"></b><br>
-<b id = "recovered"></b>
+<br>
+<div style="overflow-x:auto;">
+<table id="tableCss">
+  <tr>
+    <th>Index</th>
+    <th>State</th>
+    <th>Active</th>
+    <th>Confirmed</th>
+    <th>Deaths</th>
+    <th>LastUpdated</th>
+  </tr>
+</div>
+</table>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
+<script type="text/javascript">
+  $(document).ready(function(){
+    $.ajax({
+      url:"http://newsapi.org/v2/top-headlines?country=in&apiKey=b848bcbc6fe0459babadd3c1ae116190",
+      dataType:"json",
+      success:function(data){
+        $(data.statewise).each(function(index,value){
+          var record = value.status
+          print(record)
+        });
+      }
+    });
+  });
+</script>
 
-<button class="button5"><b id="cases"></b></button>
-
-</body>
-</html>
