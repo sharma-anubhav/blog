@@ -2,7 +2,7 @@
 layout: post
 title:  J.A.R.V.I.S - Just A Rather Very Intelligent System
 date:   2020-08-25 01:11:58 +0800
-image:  alexis.png
+image:  assistant.gif
 tags:   [Python, Application]
 ---
 On windows machines, we are stuck with cortana which uses BING search engine, which frankly many people dont like.<br>
