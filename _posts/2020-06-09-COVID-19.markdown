@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  COVID-19
+title:  COVID-19 Statistics (India)
 date:   2020-06-24 04:55:58 +0800
 image:  covid.jpg
 tags:   [HTML , javascript]
