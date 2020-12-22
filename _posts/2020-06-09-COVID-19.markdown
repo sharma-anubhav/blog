@@ -28,7 +28,7 @@ To see the information regarding daily / date / state wise cases click below : <
   </div>
   </div>
 <div class="imagewithoverlay">
-  <img src="https://github.com/sharma-anubhav/blog/blob/master/_pics/Corona/stayhome.png?raw=true" alt="Stayhome" sizes = "100vw" >
+  <img src="https://github.com/sharma-anubhav/blog/blob/master/img/Corona/stayhome.png?raw=true" alt="Stayhome" sizes = "100vw" >
   <div class="overlay">
     <div class="text">
     <div class="over">
@@ -49,7 +49,7 @@ To see the information regarding daily / date / state wise cases click below : <
 </div>
 <br><br>
 <div class="imagewithoverlay">
-  <img src="https://github.com/sharma-anubhav/blog/blob/master/_pics/Corona/symptoms.jpg?raw=true" alt="Stayhome" class= "image" >
+  <img src="https://github.com/sharma-anubhav/blog/blob/master/img/Corona/symptoms.jpg?raw=true" alt="Stayhome" class= "image" >
   <div class="overlay">
     <div class="text">
     <div class="over">
