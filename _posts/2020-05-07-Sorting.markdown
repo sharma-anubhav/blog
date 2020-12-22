@@ -9,10 +9,10 @@ tags:   [Python]
 But what if you sort an image?<br>
 here's what happens.
  
-<img src="https://github.com/sharma-anubhav/blog4/blob/master/_pics/Me3.gif?raw=true"
+<img src="https://github.com/sharma-anubhav/blog/blob/master/_pics/Me3.gif?raw=true"
      alt="My pic"
      style="float: left; margin-right: 1px;" />
 
-<img src="https://github.com/sharma-anubhav/blog4/blob/master/_pics/Sorting.gif?raw=true"
+<img src="https://github.com/sharma-anubhav/blog/blob/master/_pics/Sorting.gif?raw=true"
      alt="Markdown Monster icon"
      style="float: right; margin-right: 1px;" />
