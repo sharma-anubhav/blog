@@ -4,5 +4,9 @@ title: Resume
 permalink: /resume/
 ---
 
-<iframe src="{{site.baseurl}}/img/latest.pdf" height="100%" width="100%" frameborder="0"></iframe>
+<script>
+location.replace("{{site.baseurl}}/img/latest.pdf")
+</script>
+
+<iframe src="{{site.baseurl}}/img/latest.pdf" height="500px" width="500px" frameborder="0"></iframe>
 
