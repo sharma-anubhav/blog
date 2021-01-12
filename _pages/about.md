@@ -5,5 +5,5 @@ image: Profile.jpeg
 permalink: /about/
 ---
 
-My name is Anubhav Sharma. I'm an Junior at Thapar University , currently pursuing Bachelor of Engineering (B.E) in Computer Engineering. <br>
-This blog contains the Projects and other interesting stuff I come up with. 
+My name is Anubhav Sharma. I am a third-year Computer Engineering undergraduate and a budding researcher at Thapar Institute of Technology in India. I have benefited from the comprehensive exposure to the core areas of Computer Science as provided by my university, having gained proficiency in Python, C, and C++, and have also completed courses in Operating Systems, Database Management, Data structures and Algorithms, among others.
+I am constantly working on new things which are posted here on this blog.

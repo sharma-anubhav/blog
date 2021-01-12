@@ -3,16 +3,16 @@ layout: post
 title:  Sorting
 date:   2020-05-09 01:11:58 +0800
 image:  sort.gif
-tags:   [Python]
+tags:   [Python, Computer Vision]
 ---
 <b>Sorting </b> The first thing that comes to mind is an array of integers.<br>
 But what if you sort an image?<br>
 here's what happens.
  
-<img src="https://github.com/sharma-anubhav/blog/blob/master/_pics/Me3.gif?raw=true"
+<img src="https://github.com/sharma-anubhav/blog/blob/master/img/Corona/Me3.gif?raw=true"
      alt="My pic"
      style="float: left; margin-right: 1px;" />
 
-<img src="https://github.com/sharma-anubhav/blog/blob/master/_pics/Sorting.gif?raw=true"
+<img src="hhttps://github.com/sharma-anubhav/blog/blob/master/img/Corona/Sorting.gif?raw=true"
      alt="Markdown Monster icon"
      style="float: right; margin-right: 1px;" />
