@@ -9,10 +9,10 @@ tags:   [Python, Computer Vision]
 But what if you sort an image?<br>
 here's what happens.
  
-<img src="https://github.com/sharma-anubhav/blog/blob/master/img/Corona/Me3.gif?raw=true"
+<img src="{{site.baseurl}}/img/Me3.gif"
      alt="My pic"
      style="float: left; margin-right: 1px;" />
 
-<img src="hhttps://github.com/sharma-anubhav/blog/blob/master/img/Corona/Sorting.gif?raw=true"
+<img src="{{site.baseurl}}/img/Sorting.gif"
      alt="Markdown Monster icon"
      style="float: right; margin-right: 1px;" />

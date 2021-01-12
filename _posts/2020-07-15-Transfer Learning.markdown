@@ -57,7 +57,7 @@ Here are some of the created ensembles:
 
 <table id="tableCss2">
   <tr>
-    <th>Ensemple</th>
+    <th>Ensemble</th>
     <th>Accuracy(%)</th>
   </tr>
   <tr>
@@ -97,7 +97,7 @@ Final Model:
 
 **** All the above results were obtained from data on which the models were not trained on (out sample data).
 Now we are ready to use the model for prediction purpose:
-This can be found on my [github]() repository along with all the required code and documentation for the same.
+This can be found on my [github](https://github.com/sharma-anubhav/Covid_Detection) repository along with all the required code and documentation for the same.
 
 
 ### DISCUSSION
