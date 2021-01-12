@@ -106,7 +106,6 @@ With around 150 trainig images we are able to get over 90% accuracy for Covid-19
 Based on the results, it is demonstrated that deep learning with CNNs may have signifcant efects on the automatic detection and automatic extraction of essential features from X-ray images, related to the diagnosis of the Covid-19.
 it is necessary to develop models capable of distinguishing Covid-19 cases from other similar viral cases, such as SARS, but also from a greater variety of common pneumonia or even physiological X-rays.
 
-#### Web app link : [Chest X-Ray Analysis](http://anubhavs.pythonanywhere.com/)
 
 
 

@@ -3,8 +3,9 @@ layout: post
 title:  J.A.R.V.I.S - Just A Rather Very Intelligent System
 date:   2020-08-25 01:11:58 +0800
 image:  assistant.gif
-tags:   [Python, Application]
+tags:   [Python, Application, Artificial Inteligence]
 ---
+Inspired by Iron Man's personal AI assistant.
 On windows machines, we are stuck with cortana which uses BING search engine, which frankly many people dont like.<br>
 J.A.R.V.I.S is a fully automated Virtual Assistant (Voice operated) that uses google search engine to provide you with the most accurate and relevant results suited to your requirements.<br>
 The assistant provides you with most of assistant functionalities like notes, weather, informnation searching, and controls such as launching apps, brightness controls, power controls. It allows you to search the web for specific categories like Web/Video/News/Shopping.<br>
@@ -13,7 +14,7 @@ The searching uses Beautiful soup to scrape the desired type of results from goo
 API's are used to fetch informnation from Wikipedia and for Weather.
 <br>
 All this bundled with intelligent string handling and gTTs(google text to speech) gives us J.A.R.V.I.S<br>
-More feature to come.<br>
+This can be moulded for custom needs and operations that may not be possible on the current existing assistants and this can also be made to run as a web service (will make available in some time).<br>
 Project link: <a href="https://github.com/sharma-anubhav/JARVIS">Github</a>
 <br>
 For Windows, Download the Application <a href="https://github.com/sharma-anubhav/JARVIS/raw/master/V-0.2/jarvis.exe">exe</a> file
