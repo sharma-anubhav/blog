@@ -16,7 +16,7 @@ author-avatar: Profile.jpeg
 #-------------------------------
 # Contact links
 facebook:  https://www.facebook.com/profile.php?id=100026291986159/ # Add your Facebook handle
-twitter:   https://twitter.com/ # Add your Facebook handle
+twitter:   https://twitter.com/Anubhav88336338/ # Add your Facebook handle
 instagram: https://www.instagram.com/anubhav_sharma9/ # Add your Facebook handle
 pinterest: https://www.pinterest.com/ # Add your Facebook handle
 
@@ -28,12 +28,12 @@ disqus-identifier: jekyll-blog-5 # Add your shortname for Disqus Comment. For ex
 
 #-------------------------------
 # Instagram Feed
-instafeed: true # To enable the instafeed, use the value true. To turn off use the value false.
+instafeed: false # To enable the instafeed, use the value true. To turn off use the value false.
 
 
 #-------------------------------
 # Google Analytics
-google-analytics: # Add your identifier. For example UA-99631805-1.
+google-analytics: G-F5YP8XXRJH # Add your identifier. For example UA-99631805-1.
 
 
 #-------------------------------

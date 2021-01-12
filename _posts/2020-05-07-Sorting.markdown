@@ -16,3 +16,8 @@ here's what happens.
 <img src="{{site.baseurl}}/img/Sorting.gif"
      alt="Markdown Monster icon"
      style="float: right; margin-right: 1px;" />
+<br>
+<br>
+<br>
+<br>
+<br>
