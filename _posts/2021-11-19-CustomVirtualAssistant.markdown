@@ -21,15 +21,7 @@ The assistant provides you with most of assistant functionalities like:
 ![alt text](https://github.com/sharma-anubhav/T.A.R.S./blob/master/T.A.R.png?raw=true)
 
 <br>
-<iframe
-    width="640"
-    height="480"
-    src="https://youtu.be/mYbOPJcwrPQ"
-    frameborder="0"
-    allow="autoplay; encrypted-media"
-    allowfullscreen
->
-</iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mYbOPJcwrPQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Overview and technologies used
 The Assistant Features a modern user interface which is built using *HTML & CSS* as front-end and python managing the back-end processing. This is acheived through a dependancy *Eel* to integrate python with HTML.<br>
