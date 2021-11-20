@@ -18,7 +18,7 @@ The assistant provides you with most of assistant functionalities like:
 * Controls such as launching apps, brightness controls, power controls
 * Search the web for specific categories like Web/Video/News/Shopping.<br>
 
-![alt text](https://github.com/sharma-anubhav/T.A.R.S./blob/master/T.A.R.png?raw=true)
+![alt text]({{site.baseurl}}/img/flow.png)
 
 <br>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mYbOPJcwrPQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
