@@ -1,18 +1,24 @@
 ---
 layout: post
 title:  Mirror
-date:   2020-07-25 01:11:58 +0800
+date:   2021-08-25 01:11:58 +0800
 image:  mirror.jpg
 tags:   [Poetry]
 ---
-Looking deep into his eyes<br>
-I see all the childhood cries.<br>
-I see all the guilt that no one ever knew<br>
+<br>
+Looking at him I see the pain,<br>
+I see the scars that still remain.<br>
+I see things that were never told,<br>
+Buried inside him that grew old.<br>
+<br>
+Looking deep into his eyes,<br>
+I see the childhood cries.<br>
+I see the guilt no one ever knew,<br>
 With time that only grew.<br>
 <br>
-Looking at him I see straight through his lies<br>
+Looking at him I see straight through his lies,<br>
 I see a light inside that never dies.<br>
-I listen even when he doesn't speak<br>
+I listen even when he doesn't speak,<br>
 I see the strength even when he is weak.<br>
 <br>
 Looking at him I see love disguised,<br>
@@ -24,4 +30,5 @@ Looking at him I see a friend<br>
 That's been with me since the beginning<br>
 And will be with me till the end.<br>
 <br>
-I am looking at a mirror on the wall....
+I am looking at a mirror on the wall.<br>
+<br>
