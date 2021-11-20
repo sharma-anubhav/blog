@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  T.A.R.S. - Totally awesome response system
-date:   2020-08-25 01:11:58 +0800
+date:   2021-11-19 01:11:58 +0800
 image:  assistant.gif
 tags:   [Python, Application, Artificial Inteligence]
 ---
@@ -18,7 +18,7 @@ The assistant provides you with most of assistant functionalities like:
 * Controls such as launching apps, brightness controls, power controls
 * Search the web for specific categories like Web/Video/News/Shopping.<br>
 
-![alt text](https://github.com/sharma-anubhav/T.A.R.S./blob/master/T.A.R.png)
+![alt text](https://github.com/sharma-anubhav/T.A.R.S./blob/master/T.A.R.png?raw=true)
 
 ## Overview and technologies used
 The Assistant Features a modern user interface which is built using *HTML & CSS* as front-end and python managing the back-end processing. This is acheived through a dependancy *Eel* to integrate python with HTML.<br>
@@ -36,9 +36,9 @@ This assistant features functionalities that can be moulded according to the use
 
 <button class="button3" style="vertical-align:middle" onclick="location.href='https://anubhavs.pythonanywhere.com/';"> <span><b>Use T.A.R.S</b></span></button>
 
-Project link: <a href="https://github.com/sharma-anubhav/T.A.R.S.">Github</a>
+Project link: <a href="https://github.com/sharma-anubhav/T.A.R.S.">Github</a><br>
 WebApp Project: <a href="https://github.com/sharma-anubhav/DS3">Github</a>
 <br>
-For Windows, Download the Application <a href="https://github.com/sharma-anubhav/T.A.R.S./raw/master/V-1.0/Jarvis.exe">exe</a> file
+For Windows, Download the Application <a href="https://github.com/sharma-anubhav/T.A.R.S./raw/master/V-1.0/Jarvis.exe">exe</a> file<br>
 For Windows, Download the Application <a href="https://github.com/sharma-anubhav/DS3">dmg</a> file
 
