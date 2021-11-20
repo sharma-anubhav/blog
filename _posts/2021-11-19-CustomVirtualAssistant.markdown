@@ -38,6 +38,7 @@ The package is bundled into a single executable file (.exe found in this reposit
 This assistant features functionalities that can be moulded according to the users needs. Unlike the closed source alternatives, this is flixeble and can be modified by a the developer community and its feaures can be expanded by anyone.<br> It doesnt store any user data, hence there is no risk of large companies gathering and selling your data. Moreover it features a web app along with the local machine app for Windows and MacOS. There isnt a functioning webapp for an assistant i could find hence i worked on one along with the app for the local machine. <br>
 
 <button class="button3" style="vertical-align:middle" onclick="location.href='https://anubhavs.pythonanywhere.com/';"> <span><b>Use T.A.R.S</b></span></button>
+*** Some features might not work in the webapp due to uploading constraints <br>
 
 Project link: <a href="https://github.com/sharma-anubhav/T.A.R.S.">Github</a><br>
 WebApp Project: <a href="https://github.com/sharma-anubhav/DS3">Github</a>
